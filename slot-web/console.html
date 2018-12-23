@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sontaku Cyusenki</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/css/flat-ui.min.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top rounded-0">
+    <div class="container">
+      <a class="navbar-brand" href="#">Sontaku Cyusenki</a>
+      <form class="form-inline verify_form">
+        <input class="form-control mr-sm-2 flat access_key" placeholder="アクセスキー" required value="" />
+        <button class="btn my-2 my-sm-0 btn-secondary verify" type="submit">認証</button>
+      </form>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row unauth d-none">
+      <div class="col-12">
+        <div class="alert alert-danger" role="alert">
+        </div>
+      </div>
+    </div>
+    <div class="row main d-none">
+      <div class="col-12">
+        <ul class="nav nav-tabs mb-4">
+          <li class="nav-item">
+            <a href="#tab1" class="nav-link active text-muted" data-toggle="tab">コンソール</a>
+          </li>
+          <li class="nav-item">
+            <a href="#tab2" class="nav-link text-muted" data-toggle="tab">画像アップロード</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div id="tab1" class="tab-pane active">
+            <form>
+              <button class="btn btn-info btn-lg open_slot" role="button">スロット画面を表示</button>
+            </form>
+            <table class="table mt-2 slot_table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">グループ</th>
+                  <th scope="col">名前</th>
+                  <th scope="col">プレゼント</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+          <div id="tab2" class="tab-pane">
+            <form class="file_upload_form">
+              <div class="form-group">
+                <label for="file-select">ファイル選択(画像のみ・1MB以下)</label>
+                <input id="file-select" type="file" class="form-control flat file_select" required />
+              </div>
+              <button class="btn btn-info btn-lg file_upload" role="button">アップロード</button>
+            </form>
+            <div class="alert_area mt-4">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="templates" style="display: none">
+    <table class="table_row">
+      <tr>
+        <th scope="row"><button class="btn"></button></th>
+        <td class="align-middle group">?</td>
+        <td class="align-middle person">?</td>
+        <td class="align-middle gift">?</td>
+      </tr>
+    </table>
+    <div class="alert_dismissible">
+      <div class="alert alert-dismissible fade show" role="alert">
+        <div class="message"></div>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aws-sdk/2.348.0/aws-sdk.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cuid/1.3.8/browser-cuid.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/js/flat-ui.min.js"></script>
+  <script src="scripts/console.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,326 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: black;
+  text-align: center;
+  overflow: hidden;
+}
+
+.main {
+  display: inline-block;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.curtain {
+  height: 100%;
+  z-index: 0;
+}
+
+.flowers-left {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 30%;
+  -webkit-transform: scale(-1, 1) translate(5%, 5%);
+  z-index: 1;
+}
+
+.flowers-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 30%;
+  -webkit-transform: translate(5%, 5%);
+  z-index: 1;
+}
+
+.ribbon-top {
+  position: absolute;
+  width: 50%;
+  left: 0;
+  right: 0;
+  top: 1%;
+  margin: auto;
+  z-index: 10;
+}
+
+.slot-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 2.75%;
+  margin: auto;
+  z-index: 15;
+
+  font-size: 9vh;
+  color: gold;
+  -webkit-text-stroke: thin black;
+}
+
+.plate-left-text {
+  position: absolute;
+  left: 16.5%;
+  bottom: 11.2%;
+  width: 5em;
+  height: 2em;
+  font-size: 5vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plate-right-text {
+  position: absolute;
+  right: 16.5%;
+  bottom: 11.2%;
+  width: 5em;
+  height: 2em;
+  font-size: 5vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slot-plate-square {
+  position: absolute;
+}
+
+.text {
+  vertical-align: middle;
+  z-index: 50;
+  font-family: 'ヒラギノ角ゴ Std W8', monospace;
+  font-weight: bold;
+
+  line-height: 1em;
+  -webkit-animation: neon 1s ease-in-out infinite alternate;
+}
+
+.kirakira {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.tape-bottom-left {
+  position: absolute;
+  width: 40%;
+  left: 10%;
+  bottom: 11%;
+  margin: auto;
+  z-index: 10;
+}
+
+.tape-bottom-right {
+  position: absolute;
+  width: 40%;
+  right: 10%;
+  bottom: 11%;
+  margin: auto;
+  z-index: 10;
+}
+
+.tape-bottom {
+  position: absolute;
+  width: 30%;
+  left: 0;
+  right: 0;
+  bottom: 2%;
+  margin: auto;
+  z-index: 100;
+}
+
+.tape-bottom-text {
+  position: absolute;
+  width: 30%;
+  left: 0;
+  right: 0;
+  bottom: 2.5%;
+  margin: auto;
+  z-index: 100;
+
+  font-size: 5vh;
+}
+
+.plate-bottom-left {
+  position: absolute;
+  width: 18%;
+  left: 16%;
+  bottom: 8%;
+  z-index: 50;
+}
+
+.plate-bottom-right {
+  position: absolute;
+  width: 18%;
+  right: 16%;
+  bottom: 8%;
+  z-index: 50;
+}
+
+.plate-bottom-center {
+  position: absolute;
+  width: 18%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 3%;
+  z-index: 50;
+}
+
+.plate-bottom-center-image {
+  position: absolute;
+  border-radius: 50%;
+  width: 20.75vh;
+  height: 20.75vh;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 6.35%;
+  z-index: 55;
+}
+
+.slot-wheel {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  top: 20%;
+  overflow: hidden;
+  height: 50vh;
+}
+
+.slot-item {
+  position: relative;
+}
+
+.slot-item-bg {
+  height: 50vh;
+}
+
+.slot-item-gift {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 45vh;
+}
+
+.slot-item-tape {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  height: 10vh;
+  z-index: 55;
+}
+
+.slot-gift-name {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  height: 10vh;
+  font-size: 10vh;
+}
+
+.slot-person-image {
+  position: absolute;
+  border-radius: 50%;
+  width: 38vh;
+  height: 38vh;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 12.5%;
+}
+
+.slot-item-big-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 7.5vh;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 100;
+
+  font-size: 10vh;
+}
+
+.slot-item-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 7.5vh;
+  bottom: 0;
+  margin: auto;
+  z-index: 100;
+
+  font-size: 5vh;
+}
+
+.pikapika, .hazure {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.winning .hidden-winning, .winning .slot-wheel .slot-item * {
+  visibility: hidden;
+}
+
+.winning .slot-wheel .slick-current .slot-item * {
+  visibility: visible;
+}
+
+.winning-image {
+  filter: brightness(25%);
+}
+
+.hazure {
+  background: black;
+  visibility: hidden;
+}
+
+.losing .hazure {
+  visibility: visible;
+}
+
+.losing .hidden-winning, .losing .slot-wheel .slot-item * {
+  visibility: hidden;
+}
+
+.losing .slot-wheel .slick-current .slot-item * {
+  visibility: visible;
+}
+
+@keyframes neon {
+  from {
+    text-shadow: 0 0 1px white, 0 0 2px white, 0 0 3px white, 0 0 4px lightyellow, 0 0 5px lightyellow, 0 0 6px lightyellow, 0 0 7px lightyellow, 0 0 8px lightyellow;
+  }
+
+  to {
+    text-shadow: 0 0 2px white, 0 0 4px white, 0 0 6px white, 0 0 8px lightyellow, 0 0 10px lightyellow, 0 0 12px lightyellow, 0 0 14px lightyellow, 0 0 16px lightyellow;
+  }
+}

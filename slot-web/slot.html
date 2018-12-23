@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+  <link rel="stylesheet" href="styles/slot.css" type="text/css">
+  <title>おたのしみスロット</title>
+</head>
+
+<body>
+  <div class="main" style="opacity: 0;">
+    <img alt="image" src="images/curtain.png" class="curtain">
+    <canvas class="kirakira"></canvas>
+    <div>
+      <div class="pikapika fore"></div>
+      <div class="pikapika alt"></div>
+      <div class="hazure"></div>
+    </div>
+    <img alt="image" src="images/flowers.png" class="flowers-left hidden-winning">
+    <img alt="image" src="images/flowers.png" class="flowers-right hidden-winning">
+    <img alt="image" src="images/ribbon-gold.png" class="ribbon-top hidden-winning">
+    <img alt="image" src="images/tape-red.png" class="tape-bottom-left hidden-winning">
+    <img alt="image" src="images/tape-red.png" class="tape-bottom-right hidden-winning">
+    <img alt="image" src="images/tape-gold.png" class="tape-bottom">
+    <img alt="image" src="images/plate-square.png" class="plate-bottom-left hidden-winning">
+    <img alt="image" src="images/plate-round.png" class="plate-bottom-center">
+    <img alt="image" src="images/plate-square.png" class="plate-bottom-right hidden-winning">
+    <img alt="image" src="images/question.png" class="plate-bottom-center-image person_image">
+    <div class="slot-text text"><span class="top_title">おたのしみスロット</span></div>
+    <div class="plate-left-text text hidden-winning">
+      <span class="organization_name">どこの</span>
+    </div>
+    <div class="plate-right-text text hidden-winning"><span class="gift_name">何を</span></div>
+    <div class="tape-bottom-text text">
+      <span style="visibility: hidden;">■</span>
+      <span class="person_name">？</span>
+      <small>様に</small>
+    </div>
+    <ui class="slot-wheel">
+    </ui>
+  </div>
+  <div style="display: none" class="templates">
+    <div class="wheel">
+      <ui class="slot-wheel"></ui>
+    </div>
+    <div class="group">
+      <li class="slot-item">
+        <img alt="image" src="images/plate-square.png" class="slot-item-bg">
+        <div class="text slot-item-big-text">
+          <span class="item_text"></span>
+        </div>
+      </li>
+    </div>
+    <div class="person">
+      <li class="slot-item">
+        <img alt="image" src="images/plate-round.png" class="slot-item-bg">
+        <img alt="image" src="images/question.png" class="slot-person-image">
+        <img alt="image" src="images/tape-red.png" class="slot-item-tape">
+        <div class="text slot-item-text">
+          <span class="item_text"></span>
+        </div>
+      </li>
+    </div>
+    <div class="gift">
+      <li class="slot-item">
+        <img alt="image" src="images/plate-square.png" class="slot-item-bg">
+        <img alt="image" src="images/gift.png" class="slot-item-gift gift_image">
+        <img alt="image" src="images/tape-red.png" class="slot-item-tape">
+        <div class="text slot-item-text">
+          <span class="item_text"></span>
+        </div>
+      </li>
+    </div>
+  </div>
+  <div class="sounds" style="display: none;"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/foggy/1.1.1/jquery.foggy.js"></script>
+  <script>
+    createjs = window;
+
+  </script>
+  <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+  <script src="scripts/kirakira.js"></script>
+  <script src="scripts/pow.js"></script>
+  <script src="scripts/slot.js"></script>
+</body>
+
+</html>
